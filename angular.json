@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "libreria": {
+    "app-motos": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "libreria:build:production"
+              "buildTarget": "app-motos:build:production"
             },
             "development": {
-              "buildTarget": "libreria:build:development"
+              "buildTarget": "app-motos:build:development"
             }
           },
           "defaultConfiguration": "development"
