@@ -54,7 +54,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: 98.83.138.39
-          username: ubuntu
+          username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo docker pull daniela070806/app-libreria:latest
