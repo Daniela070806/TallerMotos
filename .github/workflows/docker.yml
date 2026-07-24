@@ -50,6 +50,6 @@ jobs:
             sudo docker rm app-angular || true
             sudo docker run -d \
               --name app-angular \
-              --network motos-aws \
+              --network trabajo-motos_default \
               -p 80:80 \
               daniela070806/app-motos:latest
