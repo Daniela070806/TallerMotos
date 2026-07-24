@@ -46,10 +46,20 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo docker pull daniela070806/app-motos:latest
+
             sudo docker stop app-angular || true
             sudo docker rm app-angular || true
+
+            CONTENEDOR_PUERTO_80=$(sudo docker ps -q --filter publish=80)
+
+            if [ -n "$CONTENEDOR_PUERTO_80" ]; then
+              sudo docker stop $CONTENEDOR_PUERTO_80
+              sudo docker rm $CONTENEDOR_PUERTO_80
+            fi
+
             sudo docker run -d \
               --name app-angular \
               --network trabajo-motos_default \
               -p 80:80 \
+              --restart unless-stopped \
               daniela070806/app-motos:latest
