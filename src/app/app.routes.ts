@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { Libros } from './features/libros/libros';
+import { Motos } from './features/motos/motos';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'libros', pathMatch: 'full' },
-    {path:'libros', component:Libros}
+    { path: '', redirectTo: 'motos', pathMatch: 'full' },
+    {path:'motos', component:Motos}
 ];

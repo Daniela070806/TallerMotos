@@ -1,0 +1,164 @@
+/* ==========================================================================
+   CONCESIONARIA PREMIUM: MOTONATION SHOWROOM (EDICIÓN DE LUJO)
+   ========================================================================== */
+
+/* 1. Fondo de Exhibición (Fondo Negro Absoluto con Aura Morada de Fondo) */
+.min-h-screen {
+  background: radial-gradient(circle at top right, #2e1065 0%, #09090b 70%) !important;
+  color: #ffffff !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+/* 2. Cabecera Principal Estilo Concesionaria */
+h1.text-slate-800 {
+  color: #ffffff !important;
+  font-weight: 950 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important; /* Estilo de marca de lujo */
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+/* Reemplazar visualmente el emoji del título por un toque elegante */
+h1.text-slate-800::before {
+  content: "🏍️ " !important;
+}
+
+p.text-slate-500 {
+  color: #a3a3a3 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  font-size: 0.8rem !important;
+}
+
+/* 3. Estructura de las Tarjetas (Efecto Cristal Pulido / Glassmorphism) */
+.bg-white {
+  background: rgba(18, 18, 18, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+h2.text-slate-700 {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.025em !important;
+}
+
+/* 4. Entradas del Formulario (Inputs Deportivos) */
+input.w-full {
+  background-color: #141416 !important;
+  border: 1px solid #27272a !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+input.w-full::placeholder {
+  color: #52525b !important;
+}
+
+input.w-full:focus {
+  border-color: #a855f7 !important;
+  background-color: #18181b !important;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25) !important;
+}
+
+/* 5. Botón de Registro de Alta Gama (Edición Deportiva) */
+button[type="submit"] {
+  /* Estado Inicial: Fondo Morado Claro / Eléctrico con Texto Blanco */
+  background: #a855f7 !important; 
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  border: 2px solid #a855f7 !important; /* Borde morado a juego */
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+button[type="submit"]:hover {
+  /* Al pasar el mouse: Fondo Negro con destellos e iluminación Morada */
+  background: #09090b !important;
+  color: #a855f7 !important; /* El texto cambia a morado */
+  border-color: #a855f7 !important; /* Mantiene el borde encendido */
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.6) !important; /* Brillo de neón */
+  transform: scale(1.02);
+}
+
+/* 6. Diseño Premium de la Tabla de Inventario */
+/* Barra Superior */
+.bg-gradient-to-r.from-indigo-700 {
+  background: #000000 !important; /* Barra negra sólida minimalista */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Encabezado interno de columnas (Acciones, Marca...) */
+.bg-slate-100 {
+  background-color: #0c0c0e !important;
+}
+
+th.text-slate-600 {
+  color: #71717a !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Filas de la Tabla */
+tr.border-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+  background-color: rgba(20, 20, 22, 0.3);
+}
+
+/* El efecto "Efecto Foco" de vitrina al pasar el mouse */
+tr.border-b:hover {
+  background-color: rgba(168, 85, 247, 0.06) !important;
+  box-shadow: inset 0 0 15px rgba(168, 85, 247, 0.05) !important;
+}
+
+/* Formatear el texto de los datos que ingresas */
+td {
+  color: #f4f4f5 !important;
+}
+
+/* Resaltar la marca de la moto como un artículo exclusivo */
+td.font-semibold.text-slate-700 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* 7. Botones Circulares de Acción (Estilo Panel de Control) */
+/* Botón de Editar */
+.bg-amber-100 {
+  background-color: rgba(39, 39, 42, 0.8) !important;
+  border: 1px solid #3f3f46 !important;
+  color: #a855f7 !important; /* Icono morado */
+  border-radius: 12px !important; /* Menos circular, más cuadrado deportivo */
+}
+
+.bg-amber-100:hover {
+  background-color: #a855f7 !important;
+  color: #d490f3 !important;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4) !important;
+}
+
+/* Botón de Eliminar */
+.bg-red-100 {
+  background-color: rgba(39, 39, 42, 0.8) !important;
+  border: 1px solid #3f3f46 !important;
+  color: #ef4444 !important; /* Icono rojo */
+  border-radius: 12px !important;
+}
+
+.bg-red-100:hover {
+  background-color: #ef4444 !important;
+  color: #c084e9 !important;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4) !important;
+}
+
+/* Estado Vacío de la Tabla */
+.text-slate-400 {
+  color: #52525b !important;
+  letter-spacing: 0.05em;
+}
